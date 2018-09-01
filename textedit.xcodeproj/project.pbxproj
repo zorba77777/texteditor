@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240407AD2139EA150094514B /* BaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240407AC2139EA150094514B /* BaseCommand.swift */; };
+		240407AF2139EAC90094514B /* BaseViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240407AE2139EAC90094514B /* BaseViewControllerState.swift */; };
+		240407B12139EB120094514B /* ViewControllerStatePremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240407B02139EB120094514B /* ViewControllerStatePremium.swift */; };
+		240407B92139ED110094514B /* FontSizeToggleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240407B82139ED110094514B /* FontSizeToggleCommand.swift */; };
+		240407BB2139F40D0094514B /* FontSizesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240407BA2139F40D0094514B /* FontSizesEnum.swift */; };
 		241E6FBD2139DB1200E1C795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E6FBC2139DB1200E1C795 /* AppDelegate.swift */; };
 		241E6FBF2139DB1200E1C795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E6FBE2139DB1200E1C795 /* ViewController.swift */; };
 		241E6FC22139DB1200E1C795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E6FC02139DB1200E1C795 /* Main.storyboard */; };
 		241E6FC42139DB1400E1C795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241E6FC32139DB1400E1C795 /* Assets.xcassets */; };
 		241E6FC72139DB1400E1C795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E6FC52139DB1400E1C795 /* LaunchScreen.storyboard */; };
+		241E6FCF2139DB5E00E1C795 /* TraitsToggleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E6FCE2139DB5E00E1C795 /* TraitsToggleCommand.swift */; };
+		241E6FD12139DBB400E1C795 /* ViewControllerStateCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E6FD02139DBB400E1C795 /* ViewControllerStateCommon.swift */; };
+		241E6FD32139DBF900E1C795 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E6FD22139DBF900E1C795 /* UIFont+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240407AC2139EA150094514B /* BaseCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommand.swift; sourceTree = "<group>"; };
+		240407AE2139EAC90094514B /* BaseViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerState.swift; sourceTree = "<group>"; };
+		240407B02139EB120094514B /* ViewControllerStatePremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStatePremium.swift; sourceTree = "<group>"; };
+		240407B82139ED110094514B /* FontSizeToggleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeToggleCommand.swift; sourceTree = "<group>"; };
+		240407BA2139F40D0094514B /* FontSizesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesEnum.swift; sourceTree = "<group>"; };
 		241E6FB92139DB1200E1C795 /* textedit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textedit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E6FBC2139DB1200E1C795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		241E6FBE2139DB1200E1C795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,9 @@
 		241E6FC32139DB1400E1C795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241E6FC62139DB1400E1C795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241E6FC82139DB1400E1C795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241E6FCE2139DB5E00E1C795 /* TraitsToggleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsToggleCommand.swift; sourceTree = "<group>"; };
+		241E6FD02139DBB400E1C795 /* ViewControllerStateCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStateCommon.swift; sourceTree = "<group>"; };
+		241E6FD22139DBF900E1C795 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240407B22139EBC70094514B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				241E6FBE2139DB1200E1C795 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		240407B32139EBFE0094514B /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				240407AC2139EA150094514B /* BaseCommand.swift */,
+				241E6FCE2139DB5E00E1C795 /* TraitsToggleCommand.swift */,
+				240407B82139ED110094514B /* FontSizeToggleCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		240407B62139EC280094514B /* States */ = {
+			isa = PBXGroup;
+			children = (
+				240407AE2139EAC90094514B /* BaseViewControllerState.swift */,
+				240407B02139EB120094514B /* ViewControllerStatePremium.swift */,
+				241E6FD02139DBB400E1C795 /* ViewControllerStateCommon.swift */,
+				240407BA2139F40D0094514B /* FontSizesEnum.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		240407B72139EC460094514B /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				241E6FD22139DBF900E1C795 /* UIFont+Extensions.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
 		241E6FB02139DB1200E1C795 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +107,11 @@
 		241E6FBB2139DB1200E1C795 /* textedit */ = {
 			isa = PBXGroup;
 			children = (
+				240407B32139EBFE0094514B /* Commands */,
+				240407B72139EC460094514B /* UIExtensions */,
+				240407B62139EC280094514B /* States */,
+				240407B22139EBC70094514B /* Controllers */,
 				241E6FBC2139DB1200E1C795 /* AppDelegate.swift */,
-				241E6FBE2139DB1200E1C795 /* ViewController.swift */,
 				241E6FC02139DB1200E1C795 /* Main.storyboard */,
 				241E6FC32139DB1400E1C795 /* Assets.xcassets */,
 				241E6FC52139DB1400E1C795 /* LaunchScreen.storyboard */,
@@ -136,7 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				241E6FBF2139DB1200E1C795 /* ViewController.swift in Sources */,
+				241E6FCF2139DB5E00E1C795 /* TraitsToggleCommand.swift in Sources */,
 				241E6FBD2139DB1200E1C795 /* AppDelegate.swift in Sources */,
+				241E6FD32139DBF900E1C795 /* UIFont+Extensions.swift in Sources */,
+				240407B12139EB120094514B /* ViewControllerStatePremium.swift in Sources */,
+				241E6FD12139DBB400E1C795 /* ViewControllerStateCommon.swift in Sources */,
+				240407BB2139F40D0094514B /* FontSizesEnum.swift in Sources */,
+				240407AF2139EAC90094514B /* BaseViewControllerState.swift in Sources */,
+				240407B92139ED110094514B /* FontSizeToggleCommand.swift in Sources */,
+				240407AD2139EA150094514B /* BaseCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
